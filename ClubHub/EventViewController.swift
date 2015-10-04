@@ -9,13 +9,19 @@
 import UIKit
 
 class EventViewController: UIViewController, UITextFieldDelegate,
-    UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var clubNameTextField: UITextField!
+    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var categoryTextField: UITextField!
+    
     var event : OrgEvent?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,14 +32,17 @@ class EventViewController: UIViewController, UITextFieldDelegate,
             navigationItem.title = event.name
             nameTextField.text = event.name
             photoImageView.image = event.photo
-            // TODO 
-            // add more fields here
+            clubNameTextField.text = event.orgName
+            dateTextField.text = event.date
+            locationTextField.text = event.location
+            descriptionTextField.text = event.info
+            categoryTextField.text = event.category
         }
         
         // enable save button only if the text field has a valid event name
         checkValidEventName()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -72,17 +81,20 @@ class EventViewController: UIViewController, UITextFieldDelegate,
         if saveButton === sender {
             let name = nameTextField.text ?? ""
             let photo = photoImageView.image
+            let orgName = clubNameTextField.text ?? ""
+            let date = dateTextField.text ?? ""
+            let location = locationTextField.text ?? ""
+            let info = descriptionTextField.text ?? ""
+            let category = categoryTextField.text ?? ""
             
-            // TODO
-            // add location, org_name
-            event = OrgEvent(name: name, photo: photo, info: "default info", location: "default location", orgName: "default org")
+            event = OrgEvent(name: name, photo: photo, orgName: orgName, date: date, location: location, info: info, category: category)
         }
     }
-
+    
     // MARK: Actions
-//    @IBAction func setDefaultLabelText(sender: UIButton) {
-//        eventNameLabel.text = "Default Text"
-//    }
+    //    @IBAction func setDefaultLabelText(sender: UIButton) {
+    //        eventNameLabel.text = "Default Text"
+    //    }
     
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         // hides keyboard

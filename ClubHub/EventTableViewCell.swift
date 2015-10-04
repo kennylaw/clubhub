@@ -10,9 +10,11 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
     // MARK: Properties
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var clubNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
