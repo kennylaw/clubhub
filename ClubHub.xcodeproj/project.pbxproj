@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		53217ECA1BC063E200E72127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53217EC91BC063E200E72127 /* AppDelegate.swift */; };
-		53217ECC1BC063E200E72127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53217ECB1BC063E200E72127 /* ViewController.swift */; };
+		53217ECC1BC063E200E72127 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53217ECB1BC063E200E72127 /* EventViewController.swift */; };
 		53217ECF1BC063E200E72127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53217ECD1BC063E200E72127 /* Main.storyboard */; };
 		53217ED11BC063E200E72127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53217ED01BC063E200E72127 /* Assets.xcassets */; };
 		53217ED41BC063E200E72127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53217ED21BC063E200E72127 /* LaunchScreen.storyboard */; };
 		53217EDF1BC063E300E72127 /* ClubHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53217EDE1BC063E300E72127 /* ClubHubTests.swift */; };
+		5341E8781BC08C3800B785DF /* OrgEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341E8771BC08C3800B785DF /* OrgEvent.swift */; settings = {ASSET_TAGS = (); }; };
+		5341E8791BC08C3800B785DF /* OrgEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341E8771BC08C3800B785DF /* OrgEvent.swift */; settings = {ASSET_TAGS = (); }; };
+		5341E87B1BC08ED100B785DF /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341E87A1BC08ED100B785DF /* EventTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		5341E87C1BC08ED100B785DF /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341E87A1BC08ED100B785DF /* EventTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		5341E87E1BC092D500B785DF /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341E87D1BC092D500B785DF /* EventTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5341E87F1BC092D500B785DF /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341E87D1BC092D500B785DF /* EventTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +34,7 @@
 /* Begin PBXFileReference section */
 		53217EC61BC063E200E72127 /* ClubHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53217EC91BC063E200E72127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53217ECB1BC063E200E72127 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53217ECB1BC063E200E72127 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		53217ECE1BC063E200E72127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53217ED01BC063E200E72127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53217ED31BC063E200E72127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,9 @@
 		53217EDA1BC063E200E72127 /* ClubHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClubHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53217EDE1BC063E300E72127 /* ClubHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubHubTests.swift; sourceTree = "<group>"; };
 		53217EE01BC063E300E72127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5341E8771BC08C3800B785DF /* OrgEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgEvent.swift; sourceTree = "<group>"; };
+		5341E87A1BC08ED100B785DF /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		5341E87D1BC092D500B785DF /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				53217EC91BC063E200E72127 /* AppDelegate.swift */,
-				53217ECB1BC063E200E72127 /* ViewController.swift */,
+				53217ECB1BC063E200E72127 /* EventViewController.swift */,
+				5341E8771BC08C3800B785DF /* OrgEvent.swift */,
 				53217ECD1BC063E200E72127 /* Main.storyboard */,
+				5341E87D1BC092D500B785DF /* EventTableViewController.swift */,
+				5341E87A1BC08ED100B785DF /* EventTableViewCell.swift */,
 				53217ED01BC063E200E72127 /* Assets.xcassets */,
 				53217ED21BC063E200E72127 /* LaunchScreen.storyboard */,
 				53217ED51BC063E200E72127 /* Info.plist */,
@@ -196,8 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53217ECC1BC063E200E72127 /* ViewController.swift in Sources */,
+				5341E87B1BC08ED100B785DF /* EventTableViewCell.swift in Sources */,
+				53217ECC1BC063E200E72127 /* EventViewController.swift in Sources */,
+				5341E8781BC08C3800B785DF /* OrgEvent.swift in Sources */,
 				53217ECA1BC063E200E72127 /* AppDelegate.swift in Sources */,
+				5341E87E1BC092D500B785DF /* EventTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5341E87C1BC08ED100B785DF /* EventTableViewCell.swift in Sources */,
+				5341E8791BC08C3800B785DF /* OrgEvent.swift in Sources */,
+				5341E87F1BC092D500B785DF /* EventTableViewController.swift in Sources */,
 				53217EDF1BC063E300E72127 /* ClubHubTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +405,7 @@
 				53217EE51BC063E300E72127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53217EE61BC063E300E72127 /* Build configuration list for PBXNativeTarget "ClubHubTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +414,7 @@
 				53217EE81BC063E300E72127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
